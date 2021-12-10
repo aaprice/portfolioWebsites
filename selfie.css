@@ -1,0 +1,299 @@
+/* COLOR SCHEME: Birdfolio Blues */
+/*
+Colors/Sections for copy/paste reference
+
+Highlight 
+color:#2C3E50 
+background-color:#3498DB 
+
+Primary
+color:#ECF0F1
+background-color:#2C3E50
+
+Secondary
+color:#ECF0F1
+background-color:#E74C3C
+
+Tertiary
+color:#2980B9
+background-color:#ECF0F1
+
+Body
+color:#2C3E50
+background-color:#2980B9
+
+*/
+
+/* header css style, use Secondary color scheme */
+
+
+header {
+  color:#ECF0F1;
+  background-color:#E74C3C;
+  background-image:url(photos/download.png);
+  background-repeat:no-repeat;
+  background-position: right;
+  border-radius: 10px 10px 0 0;
+}
+
+/* nav Tertiary */ 
+nav {
+  color:#2980B9;
+  background-color:#ECF0F1;
+  padding: 5px 10px;
+  font-size: 14pt;
+  font-weight: bold;
+  box-shadow: 0 10px 5px -5px #3498DB;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color:#2980B9;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+nav a:hover {
+  color:#2C3E50; 
+  background-color:#3498DB;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/*main Primary and descendant */
+main {
+  color:#ECF0F1;
+  background-color:#2C3E50;
+  padding: 10px;
+  z-index: 0;
+}
+
+main a {
+  color:#ECF0F1;
+}
+
+main table {
+  border: 1px solid #3498DB;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+main td {
+  border: 1px solid #3498DB;
+  padding: 5px;
+}
+
+main th {
+  border: 1px solid #3498DB;
+  padding: 5px;
+  color: #2C3E50; 
+  background-color: #3498DB;
+  text-align: left;
+}
+
+/* footer Secondary and descendant */ 
+
+footer {
+  color:#ECF0F1;
+  background-color:#E74C3C;
+  padding: 5px 10px;
+  font-size: 10pt;
+  font-style: italic;
+  border-radius: 0 0 10px 10px;
+}
+
+footer a {
+  color:#ECF0F1;
+}
+
+/* div class style and ids*/
+.details {
+  color:#2C3E50; 
+  background-color:#3498DB;
+  float: right;
+  padding: 5px 10px;
+}
+
+#wrapper {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+
+/* selector to change body elements */ 
+body{
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  background-color:#2980B9 ;
+}
+
+/* selector to change h1 look/style */ 
+h1{
+  margin:0;
+  padding: 5px 10px 5px 10px;
+  font-size: 42pt;
+  line-height: 36pt;
+  font-weight: lighter;
+}
+
+h2{
+  margin:0;
+  padding: 0 10px 5px;
+  font-size: 18pt;
+  line-height: 22pt;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+h3{
+  font-size: 24pt;
+  font-weight: lighter;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery figure {
+  margin: 10px 20px 10px 20px;
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gallery figcaption {
+  text-align: center;
+  font-size: 11pt;
+}
+
+.gallery img:hover {
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 5px 5px 10px #ECF0F1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.my_photo {
+  float: right;
+  overflow: auto;
+ 
+}
+
+.school {
+  border-left: 10px solid #ECF0F1;
+  border-right: 1px dashed #ECF0F1;
+  border-top: 1px dashed #ECF0F1;
+  border-bottom: 1px dashed #ECF0F1;
+  margin: 20px 20px 20px 20px;
+  padding: 5px 10px 5px 10px;
+  overflow: auto;
+}
+
+.school img {
+  float: left;
+}
+
+.school h3 {
+  margin: 0 0 0 120px;
+}
+
+.school h4 {
+  font-size: 14pt;
+  font-weight: lighter;
+  margin: 0 0 0 120px;
+}
+
+.school ul {
+  margin: 0 0 0 120px;
+}
+
+.experience {
+  border-left: 10px solid #ECF0F1;
+  border-right: 1px dashed #ECF0F1;
+  border-top: 1px dashed #ECF0F1;
+  border-bottom: 1px dashed #ECF0F1;
+  margin: 20px 20px 20px 20px;
+  padding: 5px 10px 5px 10px;
+  overflow: auto;
+}
+
+.experience h4{
+  font-size: 18pt;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.experience .title {
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.experience .dates {
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  float: right;
+}
+
+.experience .description {
+  font-size: 11pt;
+}
+
+.experience ul {
+  margin: 0;
+}
+
+.experience .responsibilities {
+  font-size: 10pt;
+  -ms-column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+ display: block;
+}
+
+
+<nav>
+        <ul>
+          <li><a href="index.html">Home</a>
+          <li><a href="#">Games</a>
+            <ul>
+              <li><a href="warframe.html">Warframe</a>
+              <li><a href="dauntless.html">Dauntless</a>
+              <li><a href="fortnite.html">Fortnite</a>
+              <li><a href="neverwinter.html">Neverwinter</a>
+            </ul>
+          <li><a href="tips.html">Tips</a>
+          <li><a href="links.html">Links</a>
+          <li><a href="contact.html">Contact</a>
+        </ul>
+      </nav>
+

@@ -1,0 +1,129 @@
+
+
+<?php
+
+if($_POST["message"]) {
+
+mail("augustacybersolutions@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: agprice6@gmail.com");
+
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aaron Price - Contact</title>
+    <!-- 1. Add latest jQuery and fancybox files -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- regular css below -->
+    <link rel="stylesheet" href="selfie.css">
+    <link rel="stylesheet" href="selfie_tablet.css"
+          media="only screen and (max-width: 1000px)">
+    <link rel="stylesheet" href="selfie_mobile.css"
+          media="only screen and (max-width: 600px)">
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <header>
+        <h1>Aaron Price</h1>
+        <h2>Contact Me</h2>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a>
+          <li><a href="experience.html">Experience</a>
+          <li><a href="education.html">Education</a>
+          <li><a href="gallery.html">Photo Gallery</a>
+          <li><a href="contact.php">Contact Me</a>
+        </ul>
+
+      </nav>
+
+      <main>
+        <h3>Contact Information</h3>
+
+        <table>
+          <tr>
+            <th>E-Mail</th>
+            <td>
+              <a href="mailto:aaprice@augusta.edu">aaprice@augusta.edu</a>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Phone</th>
+            <td>
+              <a href="tel:7068606453">(706)860-6453</a>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Facebook</th>
+            <td>
+              <a href="https://www.facebook.com/aaron.g.price"
+              target="_blank">Aaron Price</a>
+            </td>
+          </tr>
+
+          <tr>
+            <th>LinkedIn</th>
+            <td>
+              <a href="https://www.linkedin.com/in/aaron-price-284612152/"
+              target="_blank">Aaron Price</a>
+            </td>
+          </tr>
+
+
+        </table>
+<hr size="3">
+        <form action="contact.php" method="post">
+          <label>Please add your name/email:</label><br>
+          <textarea name="message" cols="30" rows="10"></textarea><br>
+          <input type="submit">
+        </form>
+
+<!--
+<input type="text" name="yourName" value=""><br>
+<label>Your Email:</label><br>
+<input type="email" name="yourEmail" value=""><br>
+<label>Your Message:</label><br>
+-->
+
+
+
+
+
+
+      </main>
+
+      <footer>
+        Copyright &copy; 2019, Aaron G. Price<br>
+
+        <b>Email:</b><a href="mailto:aaprice@augusta.edu">
+         aaprice@augusta.edu</a><br>
+
+        <b>Profile:</b><a href="https://www.facebook.com/aaron.g.price"
+        target="_blank">Facebook</a>
+      </footer>
+
+    </div>
+<!-- End of div "wrapper" -->
+
+  </body>
+
+</html>

@@ -1,0 +1,14 @@
+/* New style sheet to control tablets and mobile layouts */
+
+/* to keep the rounded features and background color we need some
+space between the wrapper and actual edge of screen */
+
+
+body {
+  margin: 5px;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0;
+}
